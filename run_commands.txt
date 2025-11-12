@@ -1,0 +1,48 @@
+####################clip_RN50
+
+python run_train.py --dataset Aircraft --backbone "clip_RN50" --save_dir "save_model" --concept_set "data/generate_concept/concept/Aircraft_concepts_gpt-4o_final.json" --Tmerge 0.9997 --Tconf 0.20 --lam 0.0007 --n_iters 10000 --saga_batch_size 256 --cbl_layer_num 2 --cbl_bias --use_penultimate --cbl_batch_size 32 --cbl_lr 0.0005 --cbl_steps 20000 --weight_decay 0 --K_indep 5
+
+python run_train.py --dataset CIFAR10 --backbone "clip_RN50" --save_dir "save_model" --concept_set "data/generate_concept/concept/CIFAR10_concepts_gpt-4o_final.json" --Tmerge 0.9996 --Tconf 0.20 --lam 0.0007 --n_iters 10000 --saga_batch_size 256 --cbl_layer_num 2 --cbl_bias --use_penultimate --cbl_batch_size 1024 --cbl_lr 0.0004 --cbl_steps 20000 --weight_decay 0 --K_indep 5
+
+python run_train.py --dataset CIFAR100 --backbone "clip_RN50" --save_dir "save_model" --concept_set "data/generate_concept/concept/CIFAR100_concepts_gpt-4o_final.json" --Tmerge 0.9997 --Tconf 0.20 --lam 0.0007 --n_iters 10000 --saga_batch_size 256 --cbl_layer_num 2 --cbl_bias --use_penultimate --cbl_batch_size 512 --cbl_lr 0.0005 --cbl_steps 20000 --weight_decay 0 --K_indep 5
+
+python run_train.py --dataset CUB200 --backbone "clip_RN50" --save_dir "save_model" --concept_set "data/generate_concept/concept/CUB200_concepts_gpt-4o_final.json" --Tmerge 0.9998 --Tconf 0.20 --lam 0.0008 --n_iters 10000 --saga_batch_size 256 --cbl_layer_num 2 --cbl_bias --use_penultimate --cbl_batch_size 32 --cbl_lr 0.0002 --cbl_steps 30000 --weight_decay 0.00001 --K_indep 1
+
+python run_train.py --dataset DTD --backbone "clip_RN50" --save_dir "save_model" --concept_set "data/generate_concept/concept/DTD_concepts_gpt-4o_final.json" --Tmerge 0.9996 --Tconf 0.20 --lam 0.0007 --n_iters 10000 --saga_batch_size 256 --cbl_layer_num 2 --cbl_bias --use_penultimate --cbl_batch_size 32 --cbl_lr 0.0005 --cbl_steps 10000 --weight_decay 0 --K_indep 1
+
+python run_train.py --dataset Flower102 --backbone "clip_RN50" --save_dir "save_model" --concept_set "data/generate_concept/concept/Flower102_concepts_gpt-4o_final.json" --Tmerge 0.9997 --Tconf 0.20 --lam 0.0007 --n_iters 10000 --saga_batch_size 256 --cbl_layer_num 2 --cbl_bias --use_penultimate --cbl_batch_size 512 --cbl_lr 0.0005 --cbl_steps 20000 --weight_decay 0 --K_indep 1
+
+python run_train.py --dataset Food101 --backbone "clip_RN50" --save_dir "save_model" --concept_set "data/generate_concept/concept/Food101_concepts_gpt-4o_final.json" --Tmerge 0.9998 --Tconf 0.20 --lam 0.0007 --n_iters 10000 --saga_batch_size 256 --cbl_layer_num 2 --cbl_bias --use_penultimate --cbl_batch_size 32 --cbl_lr 0.0005 --cbl_steps 20000 --weight_decay 0 --K_indep 5
+
+python run_train.py --dataset HAM10000 --backbone "clip_RN50" --save_dir "save_model" --concept_set "data/generate_concept/concept/HAM10000_concepts_gpt-4o_final.json" --Tmerge 0.9996 --Tconf 0.20 --lam 0.0007 --n_iters 10000 --saga_batch_size 256 --cbl_layer_num 2 --cbl_bias --use_penultimate --cbl_batch_size 512 --cbl_lr 0.0010 --cbl_steps 20000 --weight_decay 0 --K_indep 3
+
+python run_train_on_imagenet.py --dataset ImageNet --backbone "clip_RN50" --save_dir "save_model" --concept_set "data/generate_concept/concept/ImageNet_concepts_gpt-4o_final.json" --Tmerge 0.9997 --Tconf 0.20 --lam 0.0005 --n_iters 80 --saga_batch_size 512 --cbl_layer_num 2 --cbl_bias --use_penultimate --cbl_batch_size 1024 --cbl_lr 0.0010 --cbl_steps 60 --weight_decay 0 --K_indep 1
+
+python run_train.py --dataset Resisc45 --backbone "clip_RN50" --save_dir "save_model" --concept_set "data/generate_concept/concept/Resisc45_concepts_gpt-4o_final.json" --Tmerge 0.9997 --Tconf 0.20 --lam 0.0007 --n_iters 10000 --saga_batch_size 256 --cbl_layer_num 2 --cbl_bias --use_penultimate --cbl_batch_size 32 --cbl_lr 0.0010 --cbl_steps 20000 --weight_decay 0 --K_indep 5
+
+python run_train.py --dataset UCF101 --backbone "clip_RN50" --save_dir "save_model" --concept_set "data/generate_concept/concept/UCF101_concepts_gpt-4o_final.json" --Tmerge 0.9997 --Tconf 0.20 --lam 0.0007 --n_iters 10000 --saga_batch_size 256 --cbl_layer_num 2 --cbl_bias --use_penultimate --cbl_batch_size 32 --cbl_lr 0.0005 --cbl_steps 20000 --weight_decay 0 --K_indep 5
+
+
+####################clip_ViT-L/14
+
+python run_train.py --dataset Aircraft --backbone "clip_ViT-L/14" --save_dir "save_model" --concept_set "data/generate_concept/concept/Aircraft_concepts_gpt-4o_final.json" --Tmerge 0.9998 --Tconf 0.20 --lam 0.0007 --n_iters 10000 --saga_batch_size 256 --cbl_layer_num 2 --cbl_bias --use_penultimate --cbl_batch_size 32 --cbl_lr 0.0005 --cbl_steps 20000 --weight_decay 0 --K_indep 4
+
+python run_train.py --dataset CIFAR10 --backbone "clip_ViT-L/14" --save_dir "save_model" --concept_set "data/generate_concept/concept/CIFAR10_concepts_gpt-4o_final.json" --Tmerge 0.9999 --Tconf 0.20 --lam 0.0007 --n_iters 10000 --saga_batch_size 256 --cbl_layer_num 2 --cbl_bias --use_penultimate --cbl_batch_size 32 --cbl_lr 0.0005 --cbl_steps 10000 --weight_decay 0 --K_indep 5
+
+python run_train.py --dataset CIFAR100 --backbone "clip_ViT-L/14" --save_dir "save_model" --concept_set "data/generate_concept/concept/CIFAR100_concepts_gpt-4o_final.json" --Tmerge 0.9997 --Tconf 0.20 --lam 0.0007 --n_iters 10000 --saga_batch_size 256 --cbl_layer_num 2 --cbl_bias --use_penultimate --cbl_batch_size 32 --cbl_lr 0.0002 --cbl_steps 20000 --weight_decay 0 --K_indep 5
+
+python run_train.py --dataset CUB200 --backbone "clip_ViT-L/14" --save_dir "save_model" --concept_set "data/generate_concept/concept/CUB200_concepts_gpt-4o_final.json" --Tmerge 0.9998 --Tconf 0.20 --lam 0.0009 --n_iters 10000 --saga_batch_size 256 --cbl_layer_num 2 --cbl_bias --use_penultimate --cbl_batch_size 32 --cbl_lr 0.0001 --cbl_steps 30000 --weight_decay 0.00001 --K_indep 2
+
+python run_train.py --dataset DTD --backbone "clip_ViT-L/14" --save_dir "save_model" --concept_set "data/generate_concept/concept/DTD_concepts_gpt-4o_final.json" --Tmerge 0.9996 --Tconf 0.20 --lam 0.0007 --n_iters 10000 --saga_batch_size 256 --cbl_layer_num 2 --cbl_bias --use_penultimate --cbl_batch_size 32 --cbl_lr 0.0010 --cbl_steps 5000 --weight_decay 0 --K_indep 5
+
+python run_train.py --dataset Flower102 --backbone "clip_ViT-L/14" --save_dir "save_model" --concept_set "data/generate_concept/concept/Flower102_concepts_gpt-4o_final.json" --Tmerge 0.9996 --Tconf 0.20 --lam 0.0002 --n_iters 10000 --saga_batch_size 256 --cbl_layer_num 2 --cbl_bias --use_penultimate --cbl_batch_size 32 --cbl_lr 0.0001 --cbl_steps 30000 --weight_decay 0.00001 --K_indep 0
+
+python run_train.py --dataset Food101 --backbone "clip_ViT-L/14" --save_dir "save_model" --concept_set "data/generate_concept/concept/Food101_concepts_gpt-4o_final.json" --Tmerge 0.9996 --Tconf 0.20 --lam 0.0007 --n_iters 10000 --saga_batch_size 256 --cbl_layer_num 2 --cbl_bias --use_penultimate --cbl_batch_size 32 --cbl_lr 0.0001 --cbl_steps 20000 --weight_decay 0.00001 --K_indep 2
+
+python run_train.py --dataset HAM10000 --backbone "clip_ViT-L/14" --save_dir "save_model" --concept_set "data/generate_concept/concept/HAM10000_concepts_gpt-4o_final.json" --Tmerge 0.9996 --Tconf 0.20 --lam 0.0007 --n_iters 10000 --saga_batch_size 256 --cbl_layer_num 2 --cbl_bias --use_penultimate --cbl_batch_size 32 --cbl_lr 0.0005 --cbl_steps 20000 --weight_decay 0 --K_indep 1
+
+python run_train_on_imagenet.py --dataset ImageNet --backbone "clip_ViT-L/14" --save_dir "save_model" --concept_set "data/generate_concept/concept/ImageNet_concepts_gpt-4o_final.json" --Tmerge 0.9997 --Tconf 0.20 --lam 0.0001 --n_iters 80 --saga_batch_size 512 --cbl_layer_num 2 --cbl_bias --use_penultimate --cbl_batch_size 1024 --cbl_lr 0.0001 --cbl_steps 30 --weight_decay 0 --K_indep 1
+
+python run_train.py --dataset Resisc45 --backbone "clip_ViT-L/14" --save_dir "save_model" --concept_set "data/generate_concept/concept/Resisc45_concepts_gpt-4o_final.json" --Tmerge 0.9998 --Tconf 0.20 --lam 0.0007 --n_iters 10000 --saga_batch_size 256 --cbl_layer_num 2 --cbl_bias --use_penultimate --cbl_batch_size 32 --cbl_lr 0.0004 --cbl_steps 5000 --weight_decay 0 --K_indep 2
+
+python run_train.py --dataset UCF101 --backbone "clip_ViT-L/14" --save_dir "save_model" --concept_set "data/generate_concept/concept/UCF101_concepts_gpt-4o_final.json" --Tmerge 0.9997 --Tconf 0.20 --lam 0.0007 --n_iters 10000 --saga_batch_size 256 --cbl_layer_num 2 --cbl_bias --use_penultimate --cbl_batch_size 32 --cbl_lr 0.0001 --cbl_steps 20000 --weight_decay 0.00001 --K_indep 2
