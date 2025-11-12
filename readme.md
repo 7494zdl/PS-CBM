@@ -1,4 +1,4 @@
-#  Partially Shared Concept Bottleneck Models (PS-CBM)
+#  Partially Shared Concept Bottleneck Models (PS-CBM) [AAAI 26]
 This is the official repository for our paper "Partially Shared Concept Bottleneck Models".
 
 PS-CBM is a framework that introduces a partially shared concept strategy to reduce redundancy while preserving discrimination. It achieves state‑of‑the‑art accuracy using significantly fewer concepts.
